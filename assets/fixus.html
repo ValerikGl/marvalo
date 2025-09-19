@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fixus</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <style>
+    .nav-link {
+      font-weight: bold; 
+    }
+    .nav-link:hover {
+      color: blue !important;
+    }
+    .flag-icon {
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+    .btn-primary {
+      font-size: 24px; 
+      padding: 15px 40px; 
+      border-radius: 0; 
+      white-space: nowrap;
+      margin-right: 20px;
+    }
+    .navbar-shadow {
+      box-shadow: 0 4px 12px -4px rgba(0,0,0,0.15);
+    }
+    .extra-padding {
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-white navbar-light sticky-top navbar-shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/Fixus-logo-1.png" class="rounded" alt="Fixus Logo" height="60px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">AVALEHT</a>
+          </li>
+          <li class="nav-slash">
+            <span class="nav-link disabled">/</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">AUTOKAUBAD</a>
+          </li>
+          <li class="nav-slash">
+            <span class="nav-link disabled">/</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">RATTAPOED</a>
+          </li>  
+          <li class="nav-slash">
+            <span class="nav-link disabled">/</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">AUTOTEENINDUS</a>
+          </li>  
+          <li class="nav-slash">
+            <span class="nav-link disabled">/</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">KLIENDIKAART</a>
+          </li>  
+          <li class="nav-slash">
+            <span class="nav-link disabled">/</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">FIXUS</a>
+          </li>  
+          <li class="nav-slash">
+            <span class="nav-link disabled">/</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">BLOGI</a>
+          </li>  
+        </ul>
+        <div class="d-flex align-items-center ms-auto">
+          <li class="nav-item dropdown list-unstyled m-0">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Eesti keel <img src="assets/Flag_of_Estonia.svg.png" height="20px" alt="Estonian Flag" class="flag-icon">
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#logo">
+                  Vene keel <img src="assets/Flag_of_Russia.svg" height="20px" alt="Russian Flag" class="flag-icon">
+                </a>
+              </li>
+            </ul>
+          </li>
+          <button type="button" class="btn btn-primary ms-3" style="background-color: #164da8;">E-POOD</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid mt-0 mb-0">
+    <div class="row justify-content-center">
+      <div class="col-12 p-0">
+        <a href="https://fixus.ee/" target="_blank">
+          <img src="assets/Plakat.png" alt="Main Content Image" class="img-fluid w-100 rounded">
+        </a>
+        <div class="col-lg-6 mx-auto">
+          <h1 class="text-center mt-4 fw-bold display-4">Fixus autokaubad -<br>valmis Sind teenindama üle Eesti</h1>
+          <p class="text-center mt-3">
+            Meie valikust leiad kõik vajalikud autokaubad: autovaruosad, rehvid, akud, autokeemia, tarvikud, tööriistad, garaažiseadmed jm. autoomanikule tarvilikud tooted. Samuti töötab enamike Fixus kaupluste juures ka autoteenindus. Fixus kaubamärk ühendab täna üle 50 ettevõtte Eesti erinevates linnades ja maakondades.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <div class="row text-center">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4 mx-auto">
+        <img src="assets/varuosad@4x-1.png" alt="Pilt 1" class="img-fluid mb-3" style="max-height:100px;">
+        <p class="fw-bold mb-1">Sõiduauto varuosad</p>
+        <p class="small">Pidurisüsteemi osad, veermikuosad, mootoriosad, summutid, elektrisüsteemi osad, jõuülekanne, kereosad, toitesüsteemi osad, autode eelsoojendussüsteemid.</p>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4 mx-auto">
+        <img src="assets/lisatarvikud-alt3.png" alt="Pilt 2" class="img-fluid mb-3" style="max-height:100px;">
+        <p class="fw-bold mb-1">Lisatarvikud</p>
+        <p class="small">Autopesutarvikud, elektrilised tarvikud, katuseraamid ja -boksid, istmekatted, ilukilbid, salongi- ja pagasimatid, ohutustarvikud, klaasipuhastid, rehvitarvikud, tuuning</p>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4 mx-auto">
+        <img src="assets/rehvid@4x.png" alt="Pilt 3" class="img-fluid mb-3" style="max-height:100px;">
+        <p class="fw-bold mb-1">Rehvid ja veljed</p>
+        <p class="small">Sõiduautorehvid, kaubikurehvid, veoautorehvid, ATV rehvid, valuveljed, plekkveljed, TPMS rehvirõhuandurid, rattapoldid ja –mutrid, siselohvid, ventiilid, pumbad, manomeetrid</p>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4 mx-auto">
+        <img src="assets/maardeained2.png" alt="Pilt 4" class="img-fluid mb-3" style="max-height:100px;">
+        <p class="fw-bold mb-1">Õlid ja määrdeained</p>
+        <p class="small">Mootoriõlid sõiduautodele, mootoriõlid raskeveokitele, transmissiooniõlid ja –vedelikud, määrded, pidurivedelikud, 2-taktilised mootoriõlid, tööstusõlid ja -vedelikud</p>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4 mx-auto">
+        <img src="assets/autokeemia@4x-1.png" alt="Pilt 5" class="img-fluid mb-3" style="max-height:100px;">
+        <p class="fw-bold mb-1">Autokeemia</p>
+        <p class="small">Autohoolduskemikaalid, klaasipesu- ja jahutusvedelikud, kütuse- ja õlilisandid, motohoolduskemikaalid, korrosioonikaitse vahendid, pahtlid, aerosoolvärvid, hermeetikud</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <div class="row text-center">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4 mx-auto">
+        <img src="assets/akud@4x-1.png" alt="Pilt 6" class="img-fluid mb-3" style="max-height:100px;">
+        <p class="fw-bold mb-1">Akud</p>
+        <p class="small">Sõiduautode akud, veoautode akud, mootorrataste akud, tarbimisakud, akulaadijad, akukaablid, akuklemmid, Start/Stop abiakud, murutraktorite akud</p>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4 mx-auto">
+        <img src="assets/varuosad@4x-1.png" alt="Pilt 7" class="img-fluid mb-3" style="max-height:100px;">
+        <p class="fw-bold mb-1">Varuosad</p>
+        <p class="small">Pidurisüsteemi osad, veermikuosad, mootoriosad, elektrisüsteemi osad, kereosad, jõuülekanne, summutid</p>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4 mx-auto">
+        <img src="assets/rehvid@4x.png" alt="Pilt 8" class="img-fluid mb-3" style="max-height:100px;">
+        <p class="fw-bold mb-1">Rehvid ja veljed</p>
+        <p class="small">Sõiduautorehvid, veoautorehvid, valuveljed, plekkveljed, TPMS rehvirõhuandurid, rattapoldid ja –mutrid</p>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4 mx-auto">
+        <img src="assets/autokeemia@4x-1.png" alt="Pilt 9" class="img-fluid mb-3" style="max-height:100px;">
+        <p class="fw-bold mb-1">Autokeemia</p>
+        <p class="small">Autohoolduskemikaalid, klaasipesu- ja jahutusvedelikud, kütuse- ja õlilisandid, korrosioonikaitse vahendid</p>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4 mx-auto">
+        <img src="assets/lisatarvikud@4x-1.png" alt="Pilt 10" class="img-fluid mb-3" style="max-height:100px;">
+        <p class="fw-bold mb-1">Lisatarvikud</p>
+        <p class="small">Autopesutarvikud, elektrilised tarvikud, katuseraamid, istmekatted, ilukilbid, matid, ohutustarvikud</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5 text-center">
+    <button type="button" class="btn btn-primary btn-lg px-5 py-3" style="font-size:2rem; border-radius:0; background-color:#1a8cff;">
+      Leia lähim Fixus autokaupade pood
+    </button>
+  </div>
+
+  <div class="container-fluid py-5" style="background-color: #f5efed;">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/bosch3.png" class="img-fluid" alt="Pilt 1" style="max-height:120px; margin:auto;">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/continental2.png" class="img-fluid" alt="Pilt 2" style="max-height:120px; margin:auto;">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/defa2.png" class="img-fluid" alt="Pilt 3" style="max-height:120px; margin:auto;">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/ferodo-1.png" class="img-fluid" alt="Pilt 4" style="max-height:120px; margin:auto;">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/gates-3.png" class="img-fluid" alt="Pilt 5" style="max-height:120px; margin:auto;">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/hengst-1.png" class="img-fluid" alt="Pilt 6" style="max-height:120px; margin:auto;">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/k27.png" class="img-fluid" alt="Pilt 7" style="max-height:120px; margin:auto;">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/kyb-uus.png" class="img-fluid" alt="Pilt 8" style="max-height:120px; margin:auto;">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/lemforder-1.png" class="img-fluid" alt="Pilt 9" style="max-height:120px; margin:auto;">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/luk-1.png" class="img-fluid" alt="Pilt 10" style="max-height:120px; margin:auto;">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/sachs.png" class="img-fluid" alt="Pilt 11" style="max-height:120px; margin:auto;">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/xloils.png" class="img-fluid" alt="Pilt 12" style="max-height:120px; margin:auto;">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/total.png" class="img-fluid" alt="Pilt 13" style="max-height:120px; margin:auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- New blue section after the carousel -->
+  <div class="container-fluid py-5" style="background-color: #164da8; min-height:350px;">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h1 class="text-center fw-bold mb-4 text-white">Fixus autoteenindused</h1>
+        <p class="text-center text-white fs-5">
+          45 Fixus autoteenindust üle Eesti - leia endale sobivaim!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Border image between blue and white section -->
+  <div class="w-100 position-relative" style="background:#164da8; height:80px; overflow:visible;">
+    <img src="assets/car-copyright.png" 
+         alt="Section Border" 
+         class="d-block mx-auto position-absolute start-50 translate-middle-x"
+         style="max-width:100%; height:auto; top:-150%; left:50%; transform:translate(-50%, -50%); z-index:2;">
+  </div>
+
+  <!-- New white section after the blue section -->
+  <div class="container-fluid py-5" style="background-color: #fff;">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="text-center" style="margin-top: 100px;">
+          <button type="button" class="btn btn-primary fw-bold px-4 py-2" style="font-size:1.2rem; border-radius:0; background-color:#164da8; text-transform:uppercase;">
+            LEIA LÄHIM AUTOTEENINDUS
+          </button>
+          <h1 class="fw-bold mt-5">Fixus jalgrattad ja vabaajatooted</h1>
+          <p class="fs-5 mt-3">
+            Valikus jalgrattad, tarvikud, varuosad, riided ja kõik muu jalgrattaspordiga seonduv varustus ...
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-5">
+  <div class="row text-center">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4 mx-auto">
+      <img src="assets/jalgrattad@2x.png" alt="Pilt 1" class="img-fluid mb-3" style="max-height:100px;">
+      <p class="fw-bold mb-1">Jalgrattad</p>
+      <p class="small">Linnarattad, maastikurattad, maanteerattad, lasterattad, tõukerattad, elektrirattad, trikirattad, hübriidrattad</p>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4 mx-auto">
+      <img src="assets/tarvikud@2x.png" alt="Pilt 2" class="img-fluid mb-3" style="max-height:100px;">
+      <p class="fw-bold mb-1">Lisavarustus</p>
+      <p class="small">Pakiraamid, korvid, kotid, porilauad, joogipudelid, spidomeetrid, lukud, kellad, sarved, tugijalad, peeglid, tuled, lastetoolid</p>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4 mx-auto">
+      <img src="assets/kiiver.png" alt="Pilt 3" class="img-fluid mb-3" style="max-height:100px;">
+      <p class="fw-bold mb-1">Tarvikud</p>
+      <p class="small">Kiivrid, kingad, riided, prillid, toidulisandid, treeningpukid, rattahoidikud, autohoidikud, määrded, kemikaalid, tööriistad</p>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4 mx-auto">
+      <img src="assets/varuosad@2x.png" alt="Pilt 4" class="img-fluid mb-3" style="max-height:100px;">
+      <p class="fw-bold mb-1">Jalgrataste varuosad</p>
+      <p class="small">Rehvid, jooksud, ketid, kassetid, vändad, pedaalid, käiguvahetajad, trossid, kõrid, amordid, sadulad, pidurid, hammasrattad</p>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4 mx-auto">
+      <img src="assets/Jalgratta-hooldus.png" alt="Pilt 5" class="img-fluid mb-3" style="max-height:100px;">
+      <p class="fw-bold mb-1">Jalgrataste hooldus / remont</p>
+      <p class="small">Jalgrataste ülevaatus, lihthooldus, täishooldus, remont, rattapesu, lisavarustuse paigaldus.</p>
+    </div>
+  </div>
+  <div class="text-center mt-4">
+    <button type="button" class="btn btn-primary fw-bold px-4 py-2"
+      style="font-size:1.2rem; border-radius:0; background-color:#2eb82e; text-transform:uppercase;">
+      LEIA LÄHIM FIXUS RATTAPOOD
+    </button>
+  </div>
+</div>
+
+<div class="container-fluid py-5" style="background-color: #fff;">
+  <div class="swiper mySwiperRattad">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="assets/abus.png" class="img-fluid" alt="Ratas 1" style="max-height:120px; margin:auto;">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/adriatica.png" class="img-fluid" alt="Ratas 2" style="max-height:120px; margin:auto;">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/drag.png" class="img-fluid" alt="Ratas 3" style="max-height:120px; margin:auto;">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/fuji2.png" class="img-fluid" alt="Ratas 4" style="max-height:120px; margin:auto;">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/fulcrum.png" class="img-fluid" alt="Ratas 5" style="max-height:120px; margin:auto;">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/marwi.png" class="img-fluid" alt="Ratas 6" style="max-height:120px; margin:auto;">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/notubes.png" class="img-fluid" alt="Ratas 7" style="max-height:120px; margin:auto;">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/Schwalbe.png" class="img-fluid" alt="Ratas 8" style="max-height:120px; margin:auto;">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/sigma.png" class="img-fluid" alt="Ratas 9" style="max-height:120px; margin:auto;">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/gaerne.png" class="img-fluid" alt="Ratas 10" style="max-height:120px; margin:auto;">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/EnduroBearings_250x250_fixus.ee_.png" class="img-fluid" alt="Ratas 11" style="max-height:120px; margin:auto;">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid py-5" style="background-color: #f5efed;">
+  <div class="row text-center justify-content-center">
+    <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex align-items-center justify-content-center">
+      <form class="w-100 text-start" style="max-width: 320px; margin: 0 auto; background: #f5efed; border-radius: 8px; padding: 24px;">
+        <p class="mb-3 fw-bold">Jäta siia ainult Fixus kaubamärki puudutavad üldised küsimused.</p>
+        <input type="text" class="form-control mb-2" placeholder="Nimi">
+        <input type="email" class="form-control mb-2" placeholder="E-post">
+        <input type="text" class="form-control mb-3" placeholder="Sõnum">
+        <button type="submit" class="btn btn-primary fw-bold w-100" style="background-color:#164da8; border-radius:0; text-transform:uppercase;">
+          Saada
+        </button>
+      </form>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex flex-column align-items-start justify-content-center text-start">
+      <p class="fw-bold mb-3">Kasulikud lingid</p>
+      <div class="d-flex flex-column gap-2 w-100" style="max-width:220px;">
+        <a href="#" class="text-decoration-none text-dark fw-semibold">Fixus e-pood</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">Leia lähim kauplus</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">Autoteenindused</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">Kliendikaart</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">Kontakt</a>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex flex-column align-items-start justify-content-center text-start">
+      <p class="fw-bold mb-3">Veel lingid</p>
+      <div class="d-flex flex-column gap-2 w-100" style="max-width:220px;">
+        <a href="#" class="text-decoration-none text-dark fw-semibold">Fixus jalgrattad</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">Remonditööd</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">Hooldustööd</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">Kampaaniad</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">Uudised</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">Tagasiside</a>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3 mb-4 text-start d-flex flex-column align-items-start justify-content-center">
+      <p class="fw-bold mb-3">Liitu uudiskirjaga</p>
+      <form class="w-100" style="max-width: 320px;">
+        <input type="email" class="form-control mb-2" placeholder="Sinu e-post">
+        <button type="submit" class="btn btn-primary fw-bold w-100 mb-2" style="background-color:#164da8; border-radius:0; text-transform:uppercase;">
+          Saada
+        </button>
+        <small class="text-muted">Saadame vaid olulist infot ja sooduspakkumisi.</small>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  var swiperRattad = new Swiper('.mySwiperRattad', {
+    slidesPerView: 6,
+    spaceBetween: 30,
+    loop: true,
+    grabCursor: true,
+    mousewheel: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: { slidesPerView: 2 },
+      576: { slidesPerView: 3 },
+      768: { slidesPerView: 4 },
+      992: { slidesPerView: 5 },
+      1200: { slidesPerView: 6 }
+    }
+  });
+</script>
+</body>
+</html>
