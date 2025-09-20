@@ -365,39 +365,82 @@
             </div>
         </div>
         <!-- Contact-->
-        <section class="page-section" id="contact">
+    <section class="page-section" id="contact">
   <div class="container">
-    <div class="text-center">
+    <div class="text-center mb-5">
       <h2 class="section-heading text-uppercase">Contact Us</h2>
-      <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+      <h3 class="section-subheading text-muted">We'd love to hear from you!</h3>
     </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <form id="contactForm" action="#" class="contact-card mx-auto p-4 p-md-5 border-0 shadow-lg rounded-4 bg-white">
+          <div class="row g-4 mb-3">
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input class="form-control" id="name" name="name" type="text" placeholder="Your Name" required />
+                <label for="name"></label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input class="form-control" id="email" name="email" type="email" placeholder="Your Email" required />
+                <label for="email"></label>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4 mb-3">
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input class="form-control" id="phone" name="phone" type="tel" placeholder="Your Phone" required />
+                <label for="phone"></label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating">
+                <textarea class="form-control" id="message" name="message" placeholder="Your Message" style="height: 100px" required></textarea>
+                <label for="message"></label>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <button class="btn btn-gradient btn-lg px-5 py-2 shadow" type="submit">
+              <i class="fas fa-paper-plane me-2"></i>Send Message
+            </button>
+          </div>
+        </form>
 
-    <form action="https://formspree.io/f/xzzanqev" method="POST">
-      <div class="row align-items-stretch mb-5">
-        <div class="col-md-6">
-          <div class="form-group">
-            <input class="form-control" name="name" type="text" placeholder="Your Name *" required />
-          </div>
-          <div class="form-group">
-            <input class="form-control" name="email" type="email" placeholder="Your Email *" required />
-          </div>
-          <div class="form-group mb-md-0">
-            <input class="form-control" name="phone" type="tel" placeholder="Your Phone *" required />
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="form-group form-group-textarea mb-md-0">
-            <textarea class="form-control" name="message" placeholder="Your Message *" required></textarea>
-          </div>
-        </div>
-      </div>
+        <!-- Messages -->
+        <div id="formSuccess" class="alert alert-success mt-3 d-none text-center rounded-3 shadow-sm">✅ Thank you! Your message has been sent successfully.</div>
+        <div id="formError" class="alert alert-danger mt-3 d-none text-center rounded-3 shadow-sm">❌ Oops! Something went wrong. Please try again later.</div>
 
-      <div class="text-center">
-        <button class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+        <script>
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  let form = e.target;
+  let data = new FormData(form);
+
+  let response = await fetch("https://formspree.io/f/xzzanqev", {
+    method: "POST",
+    body: data,
+    headers: { "Accept": "application/json" }
+  });
+
+  if (response.ok) {
+    document.getElementById("formSuccess").classList.remove("d-none");
+    document.getElementById("formError").classList.add("d-none");
+    form.reset();
+  } else {
+    document.getElementById("formError").classList.remove("d-none");
+    document.getElementById("formSuccess").classList.add("d-none");
+  }
+});
+</script>
       </div>
-    </form>
+    </div>
   </div>
 </section>
+
 
         <!-- Footer-->
         <footer class="footer py-4">
