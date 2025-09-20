@@ -15,17 +15,67 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <!-- Password Prompt -->
+        <style>
+    #password-modal-overlay {
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(20px); /* Stronger blur */
+        -webkit-backdrop-filter: blur(20px); /* For Safari support */
+    }
+    #password-modal {
+        background: #fff;
+        padding: 2rem 2.5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 30px rgba(0,0,0,0.2);
+        text-align: center;
+        min-width: 300px;
+    }
+    #password-modal input[type="password"] {
+        margin: 1rem 0;
+    }
+    #password-error {
+        color: red;
+        margin-top: 0.5rem;
+        display: none;
+    }
+</style>
         <script>
             document.addEventListener("DOMContentLoaded", function() {
-                var pw = prompt("Enter password to access this page:");
-                if (pw !== "Tere1234.") {
-                    document.body.innerHTML = "<div class='container text-center mt-5'><h2>Access denied.</h2></div>";
-                }
+                var modal = document.getElementById('password-modal-overlay');
+                var input = document.getElementById('password-input');
+                var error = document.getElementById('password-error');
+                var form = document.getElementById('password-form');
+                form.onsubmit = function(e) {
+                    e.preventDefault();
+                    if (input.value === "Tere1234.") {
+                        modal.style.display = "none";
+                        document.body.style.overflow = "";
+                    } else {
+                        error.style.display = "block";
+                    }
+                };
+                input.focus();
+                document.body.style.overflow = "hidden";
             });
         </script>
     </head>
     <body id="page-top">
+        <!-- Password Modal Overlay -->
+        <div id="password-modal-overlay">
+            <form id="password-form" autocomplete="off">
+                <div id="password-modal">
+                    <h4>Enter password to access this page</h4>
+                    <input id="password-input" type="password" class="form-control" placeholder="Password" required autofocus>
+                    <button type="submit" class="btn btn-primary mt-3">Enter</button>
+                    <div id="password-error">Incorrect password. Try again.</div>
+                </div>
+            </form>
+        </div>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
@@ -189,8 +239,7 @@
                 </div>
             </div>
         </section>
-        <!-- ...rest of template.html content remains unchanged... -->
-               <!-- About-->
+        <!-- About-->
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
